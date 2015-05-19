@@ -61,4 +61,11 @@ class Post implements JsonSerializable
     {
         return $this->$name;
     }
+
+    public function jsonSerialize() {
+      return $this;
+    }
+
+
+
 }

@@ -17,7 +17,7 @@ interface PostRepository
      * @param Post $post
      * @return boolean
      */
-    public function add(Post $post);
+    public function add( $post );
 
     /**
      * Find post by specific ID
