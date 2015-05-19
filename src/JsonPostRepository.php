@@ -4,6 +4,17 @@ namespace LittleThings;
 
 class JsonPostRepository implements PostRepository, JsonRepository
 {
+
+  protected $f;
+  
+  public function __construct($in){
+    $this->f = $in;
+  }
+
+  public function __destruct(){
+
+  }
+
     /**
      * Creates array of posts from associative array
      *
@@ -22,4 +33,30 @@ class JsonPostRepository implements PostRepository, JsonRepository
             );
         }, $posts);
     }
+
+    // RETURN ALL POSTS
+    public function all(){
+      
+    }
+    
+    // RETURN BOOL 
+    public function add($post){
+      
+    }
+    
+    // RETURN POST 
+    public function findById( $id ){
+      
+    }
+    
+    // RETURN ARRAY 
+    public function readJson(){ 
+      $this->data = file_get_contents($f);
+    }
+    
+    // RETURN VOID 
+    public function writeJson(array $data){
+      
+    }
+
 }
