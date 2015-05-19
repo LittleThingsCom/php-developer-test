@@ -18,4 +18,4 @@ No web server is required for this test. You can run the application via `php in
 
 Look inside `index.php` and the `tests` directory for guidance and when running the tests it may be easier to target individual files instead of running the entire test suite. ie. `vendor/bin/phpunit PostTest.php`
 
-**The test will be considered complete when all the tests pass.**
+**The test will be considered complete when all the tests pass.** 
